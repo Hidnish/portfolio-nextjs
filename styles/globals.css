@@ -3,12 +3,16 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    @apply scroll-smooth
+  }
+  
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide
+    @apply bg-[#ecf0f3] text-[#1f2937] tracking-widest
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+    @apply font-bold font-sans
   }
 
   h1 {
@@ -27,3 +31,4 @@
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#375e8f] to-[#683595] text-white
   }
 }
+

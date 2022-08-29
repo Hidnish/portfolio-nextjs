@@ -13,59 +13,62 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="fixed w-full h-20 shadow-xl z-[100]">
+		<div id="top" className="w-full h-14 z-[100] bg-[#c0e9ff]">
 			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
 				<Image
 					src="/../public/assets/logo.png"
 					alt="portfolio logo"
-					width="50"
-					height="50"
+					width="40"
+					height="40"
+					className="ml-6"
 				/>
 				<div>
-					<ul className="hidden md:flex">
+					<ul className="hidden md:flex mr-6">
 						<Link href="">
-							<li className="ml-10 text-sm hover:border-b">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white">
 								Home
 							</li>
 						</Link>
 						<Link href="">
-							<li className="ml-10 text-sm hover:border-b ">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white ">
 								About
 							</li>
 						</Link>
 						<Link href="">
-							<li className="ml-10 text-sm hover:border-b ">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white ">
 								Skills
 							</li>
 						</Link>
 						<Link href="">
-							<li className="ml-10 text-sm hover:border-b ">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white">
 								Projects
 							</li>
 						</Link>
 						<Link href="">
-							<li className="ml-10 text-sm hover:border-b ">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white ">
 								Contact
 							</li>
 						</Link>
 					</ul>
-					<div onClick={handleSide} className="md:hidden">
+					<div onClick={handleSide} className="md:hidden mr-4 rounded-full p-2 hover:bg-[#24292E] hover:text-white ease-in duration-200">
 						<AiOutlineMenu size={25} />
 					</div>
 				</div>
 			</div>
 
 			<div
-                onClick={handleSide}
+				onClick={handleSide}
 				className={
-					nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70' : ''
+					nav
+						? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ease-in duration-200'
+						: ''
 				}
 			>
 				<div
 					className={
 						nav
-							? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[30%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500'
-							: 'fixed left-[-100%] top-0 p-10 ease-in duration-500'
+							? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[30%] h-screen bg-[#ecf0f3] p-10 ease-linear duration-500 rounded-r-2xl'
+							: 'fixed left-[-100%] top-0 p-10 ease-linear duration-500 rounded-r-2xl'
 					}
 				>
 					<div className="border-b border-gray-300 my-4">
@@ -78,7 +81,7 @@ const Navbar = () => {
 							/>
 							<div
 								onClick={handleSide}
-								className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+								className="rounded-full p-3 cursor-pointer hover:bg-[#24292E] hover:text-white ease-in duration-200"
 							>
 								<AiOutlineClose />
 							</div>
@@ -92,37 +95,37 @@ const Navbar = () => {
 					<div className="py-4 flex flex-col">
 						<ul>
 							<Link href="/">
-								<li className="py-4 text-sm">Home</li>
+								<li className="py-4 text-sm hover:text-[#57b099]">Home</li>
 							</Link>
 							<Link href="/">
-								<li className="py-4 text-sm">About</li>
+								<li className="py-4 text-sm hover:text-[#57b099]">About</li>
 							</Link>
 							<Link href="/">
-								<li className="py-4 text-sm">Skills</li>
+								<li className="py-4 text-sm hover:text-[#57b099]">Skills</li>
 							</Link>
 							<Link href="/">
-								<li className="py-4 text-sm">Projects</li>
+								<li className="py-4 text-sm hover:text-[#57b099]">Projects</li>
 							</Link>
 							<Link href="/">
-								<li className="py-4 text-sm">Contact</li>
+								<li className="py-4 text-sm hover:text-[#57b099]">Contact</li>
 							</Link>
 						</ul>
 						<div className="pt-40">
 							<p className="tracking-widest text-[#2e6353]">
-								Let's connect
+								Let&apos;s connect
 							</p>
-							<div className="flex item-center justify-between py-4 w-full sm:w-[80%]">
-								<div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-									<FaLinkedinIn />
+							<div className="flex item-center justify-between py-4 w-[90%] sm:w-[80%]">
+								<div className="rounded-full p-3 cursor-pointer hover:bg-[#0072b1] hover:text-white ease-in duration-200">
+									<FaLinkedinIn size={18} />
 								</div>
-								<div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-									<FaGithub />
+								<div className="rounded-full p-3 cursor-pointer hover:bg-[#24292E] hover:text-white ease-in duration-200">
+									<FaGithub size={18} />
 								</div>
-								<div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-									<AiOutlineMail />
+								<div className="rounded-full p-3 cursor-pointer hover:bg-amber-500 hover:text-white ease-in duration-200">
+									<AiOutlineMail size={18} />
 								</div>
-								<div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-									<BsPersonLinesFill />
+								<div className="rounded-full p-3 cursor-pointer hover:bg-[#C85250] hover:text-white ease-in duration-200">
+									<BsPersonLinesFill size={18} />
 								</div>
 							</div>
 						</div>
