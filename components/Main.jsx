@@ -6,7 +6,7 @@ import { HiOutlineMail } from 'react-icons/hi';
 
 const Main = () => {
 	return (
-		<div id="main" className="w-full h-screen text-center bg-gradient-to-b from-[#c0e9ff] to-[#d0a4ff]">
+		<div id="main" className="w-full h-screen text-center bg-gradient-to-b from-[#c0e9ff] to-[#d0a4ff] text-polvere">
 			<div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
 				<div>
 					<p className="py-3 text-sm tracking-widest text-gray-600">
@@ -14,9 +14,9 @@ const Main = () => {
 					</p>
 					<h1 className="py-2 text-gray-700">
 						Hi I&apos;m{' '}
-						<span className="text-[#57b099]">Hideo</span>,
+						<span className="text-oltremare">Hideo</span>,
 					</h1>
-					<h1 className="py-2 text-gray-700">Full Stack Web Developer</h1>
+					<h1 className="py-2 text-gray-700">Junior Full Stack Web Developer</h1>
 					<p className="py-6 text-gray-600 max-w-[70%] m-auto m-b-[100px]">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
 						sed do eiusmod tempor incididunt ut labore et dolore
@@ -29,11 +29,10 @@ const Main = () => {
 						anim id est laborum.
 					</p>
 					<div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-						
 							<div className="rounded-full p-3 cursor-pointer hover:bg-[#0072b1] hover:text-white ease-in duration-200">
 								<FaLinkedinIn size={20}/>
 							</div>
-							<div className="rounded-full p-3 cursor-pointer hover:bg-[#24292E] hover:text-white ease-in duration-200">
+							<div className="rounded-full p-3 cursor-pointer hover:bg-github hover:text-white ease-in duration-200">
 								<FaGithub size={20}/>
 							</div>
 							<div className="rounded-full p-3 cursor-pointer hover:bg-amber-500 hover:text-white ease-in duration-200">
