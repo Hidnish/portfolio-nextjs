@@ -13,7 +13,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div id="top" className="w-full h-14 z-[100] bg-[#c0e9ff]">
+		<div id="top" className="w-full h-14 z-[100] bg-[#c0e9ff] text-polvere">
 			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
 				<Image
 					src="/../public/assets/logo.png"
@@ -25,32 +25,32 @@ const Navbar = () => {
 				<div>
 					<ul className="hidden md:flex mr-6">
 						<Link href="">
-							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-github hover:text-white">
 								Home
 							</li>
 						</Link>
 						<Link href="">
-							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white ">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-github hover:text-white ">
 								About
 							</li>
 						</Link>
 						<Link href="">
-							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white ">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-github hover:text-white ">
 								Skills
 							</li>
 						</Link>
 						<Link href="">
-							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-github hover:text-white">
 								Projects
 							</li>
 						</Link>
 						<Link href="">
-							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-[#24292E] hover:text-white ">
+							<li className="ml-5 text-sm p-2 rounded-xl hover:bg-github hover:text-white ">
 								Contact
 							</li>
 						</Link>
 					</ul>
-					<div onClick={handleSide} className="md:hidden mr-4 rounded-full p-2 hover:bg-[#24292E] hover:text-white ease-in duration-200">
+					<div onClick={handleSide} className="md:hidden mr-4 rounded-full p-2 hover:bg-github hover:text-white ease-in duration-200">
 						<AiOutlineMenu size={25} />
 					</div>
 				</div>
@@ -81,7 +81,7 @@ const Navbar = () => {
 							/>
 							<div
 								onClick={handleSide}
-								className="rounded-full p-3 cursor-pointer hover:bg-[#24292E] hover:text-white ease-in duration-200"
+								className="rounded-full p-3 cursor-pointer hover:bg-github hover:text-white ease-in duration-200"
 							>
 								<AiOutlineClose />
 							</div>
@@ -95,19 +95,19 @@ const Navbar = () => {
 					<div className="py-4 flex flex-col">
 						<ul>
 							<Link href="/">
-								<li className="py-4 text-sm hover:text-[#57b099]">Home</li>
+								<li className="py-4 text-sm hover:text-oltremare">Home</li>
 							</Link>
 							<Link href="/">
-								<li className="py-4 text-sm hover:text-[#57b099]">About</li>
+								<li className="py-4 text-sm hover:text-oltremare">About</li>
 							</Link>
 							<Link href="/">
-								<li className="py-4 text-sm hover:text-[#57b099]">Skills</li>
+								<li className="py-4 text-sm hover:text-oltremare">Skills</li>
 							</Link>
 							<Link href="/">
-								<li className="py-4 text-sm hover:text-[#57b099]">Projects</li>
+								<li className="py-4 text-sm hover:text-oltremare">Projects</li>
 							</Link>
 							<Link href="/">
-								<li className="py-4 text-sm hover:text-[#57b099]">Contact</li>
+								<li className="py-4 text-sm hover:text-oltremare">Contact</li>
 							</Link>
 						</ul>
 						<div className="pt-40">
@@ -118,7 +118,7 @@ const Navbar = () => {
 								<div className="rounded-full p-3 cursor-pointer hover:bg-[#0072b1] hover:text-white ease-in duration-200">
 									<FaLinkedinIn size={18} />
 								</div>
-								<div className="rounded-full p-3 cursor-pointer hover:bg-[#24292E] hover:text-white ease-in duration-200">
+								<div className="rounded-full p-3 cursor-pointer hover:bg-github hover:text-white ease-in duration-200">
 									<FaGithub size={18} />
 								</div>
 								<div className="rounded-full p-3 cursor-pointer hover:bg-amber-500 hover:text-white ease-in duration-200">

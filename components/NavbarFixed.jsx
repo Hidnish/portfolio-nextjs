@@ -1,60 +1,63 @@
 import React from 'react';
-// import './navbar.css';
-import { AiOutlineHome, AiOutlineProject, AiOutlinePhone } from 'react-icons/ai';
+import {
+	AiOutlineHome,
+	AiOutlineProject,
+	AiOutlinePhone,
+} from 'react-icons/ai';
 import { BiUser, BiCodeAlt } from 'react-icons/bi';
+import { useScrollspy, clamp, isBetween } from '../hooks/useScrollSpy';
 
-
-import { useState } from 'react';
-
-const NavbarFixed = ({visibility}) => {
-	const [activeNav, setActiveNav] = useState('#top');
+const NavbarFixed = ({ visibility }) => {
+	const ids = ['main', 'about', 'skills', 'projects', 'contacts'];
+	const activeId = useScrollspy(ids, 80);
 
 	return (
 		<nav
-			className={`${visibility} bg-[rgba(0,0,0,.3)] flex py-2 px-2 z-[2] w-max fixed left-[50%] translate-x-[-50%] bottom-8 gap-01 rounded-full backdrop-blur-md`}
-            style={{transition: "visibility 0.4s, opacity 0.4s linear"}}
+			className={`${visibility} bg-[rgba(0,0,0,.5)] flex py-2 px-2 z-[3] w-max fixed left-[50%] translate-x-[-50%] bottom-8 rounded-full backdrop-blur-md text-grigello`}
+			style={{ transition: 'visibility 0.4s, opacity 0.4s linear' }}
 		>
 			<a
-				href="#top"
-				onClick={() => setActiveNav('#top')}
+				href="#main"
 				className={`bg-transparent p-2 mx-1 rounded-full flex text-base hover:text-white ${
-					activeNav === '#top' ? 'text-white bg-[rgba(0,0,0,.4)]' : ''
+					activeId === 'main' ? 'text-white bg-[rgba(0,0,0,.7)]' : ''
 				}`}
 			>
 				<AiOutlineHome size={24} />
 			</a>
 			<a
 				href="#about"
-				onClick={() => setActiveNav('#about')}
 				className={`bg-transparent p-2 mx-1 rounded-full flex text-base hover:text-white ${
-					activeNav === '#about' ? 'text-white bg-[rgba(0,0,0,.4)]' : ''
+					activeId === 'about' ? 'text-white bg-[rgba(0,0,0,.7)]' : ''
 				}`}
 			>
 				<BiUser size={24} />
 			</a>
 			<a
-				href="#experience"
-				onClick={() => setActiveNav('#skills')}
+				href="#skills"
 				className={`bg-transparent p-2 mx-1 rounded-full flex text-base hover:text-white ${
-					activeNav === '#skills' ? 'text-white bg-[rgba(0,0,0,.4)]' : ''
+					activeId === 'skills'
+						? 'text-white bg-[rgba(0,0,0,.7)]'
+						: ''
 				}`}
 			>
 				<BiCodeAlt size={24} />
 			</a>
 			<a
-				href="#services"
-				onClick={() => setActiveNav('#services')}
+				href="#projects"
 				className={`bg-transparent p-2 mx-1 rounded-full flex text-base hover:text-white ${
-					activeNav === '#services' ? 'text-white bg-[rgba(0,0,0,.4)]' : ''
+					activeId === 'projects'
+						? 'text-white bg-[rgba(0,0,0,.7)]'
+						: ''
 				}`}
 			>
 				<AiOutlineProject size={24} />
 			</a>
 			<a
 				href="#contacts"
-				onClick={() => setActiveNav('#contact')}
 				className={`bg-transparent p-2 mx-1 rounded-full flex text-base hover:text-white ${
-					activeNav === '#contact' ? 'text-white bg-[rgba(0,0,0,.4)]' : ''
+					activeId === 'contact'
+						? 'text-white bg-[rgba(0,0,0,.7)]'
+						: ''
 				}`}
 			>
 				<AiOutlinePhone size={24} />
