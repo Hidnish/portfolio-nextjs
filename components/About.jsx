@@ -5,7 +5,7 @@ import Dede from '../public/assets/hideo.jpg';
 
 const About = () => {
 	return (
-		<div
+		<section
 			id="about"
 			className="w-[90%] md:w-[85%] lg:h-[100vh] mx-auto p-2 flex items-center py-16"
 		>
@@ -41,7 +41,7 @@ const About = () => {
 					</p>
 					<Link href="/#projects">
 						<p className="py-2 text-gray-400 underline cursor-pointer">
-							Check out some of my latest projects.
+							Check out some of my projects.
 						</p>
 					</Link>
 				</div>
@@ -49,7 +49,7 @@ const About = () => {
 					<Image src={Dede} className="rounded-full" alt="/" />
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

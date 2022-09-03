@@ -5,6 +5,9 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      'helvetica': ["Helvetica Neue", "serif"]
+    },
     extend: {
       colors: {
         transparent: 'transparent',

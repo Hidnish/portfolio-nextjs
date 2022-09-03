@@ -13,7 +13,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div id="top" className="w-full h-14 z-[100] bg-[#c0e9ff] text-polvere">
+		<section id="top" className="w-full h-14 z-[100] bg-[#c0e9ff] text-polvere">
 			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
 				<Image
 					src="/../public/assets/logo.png"
@@ -86,11 +86,6 @@ const Navbar = () => {
 								<AiOutlineClose />
 							</div>
 						</div>
-						{/* <div className="border-b border-gray-300 my-4">
-                            <p className="w-[45%] md:w-[90%] py-4">
-                                Pick One
-                            </p>
-                        </div> */}
 					</div>
 					<div className="py-4 flex flex-col">
 						<ul>
@@ -132,7 +127,7 @@ const Navbar = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

@@ -5,7 +5,7 @@ import {
 	AiOutlinePhone,
 } from 'react-icons/ai';
 import { BiUser, BiCodeAlt } from 'react-icons/bi';
-import { useScrollspy, clamp, isBetween } from '../hooks/useScrollSpy';
+import { useScrollspy } from '../hooks/useScrollSpy';
 
 const NavbarFixed = ({ visibility }) => {
 	const ids = ['main', 'about', 'skills', 'projects', 'contacts'];
@@ -55,7 +55,7 @@ const NavbarFixed = ({ visibility }) => {
 			<a
 				href="#contacts"
 				className={`bg-transparent p-2 mx-1 rounded-full flex text-base hover:text-white ${
-					activeId === 'contact'
+					activeId === 'contacts'
 						? 'text-white bg-[rgba(0,0,0,.7)]'
 						: ''
 				}`}

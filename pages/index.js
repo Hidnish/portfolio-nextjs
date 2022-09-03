@@ -1,27 +1,20 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import { useScrollPosition } from '../hooks/useScrollPosition';
-import Scrollspy from 'react-scrollspy';
 import Navbar from '../components/Navbar';
 import NavbarFixed from '../components/NavbarFixed';
 import Main from '../components/Main';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import Contacts from '../components/Contacts';
+import Modal from '../components/subComponents/Modal';
 
 export default function Home() {
 	const scrollPos = useScrollPosition();
 
 	return (
 		<div>
-			<NavbarFixed
-				visibility={
-					scrollPos
-						? 'visible opacity-1'
-						: 'invisible opacity-0 transition-opacity linear duration-500'
-				}
-			/>
-			<Navbar />
 			<Head>
 				<title>Hideo Nishimura - Portfolio</title>
 				<meta
@@ -30,10 +23,20 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+			<NavbarFixed
+				visibility={
+					scrollPos
+						? 'visible opacity-1'
+						: 'invisible opacity-0 transition-opacity linear duration-500'
+				}
+			/>
+			<Navbar />
 			<Main />
 			<About />
 			<Skills />
 			<Projects />
+			<Contacts />
+			<Modal />
 		</div>
 	);
 }

@@ -8,12 +8,11 @@
   }
   
   body {
-    /* @apply bg-[#ecf0f3] text-[#1f2937] tracking-widest */
-    @apply bg-polvere text-bamba tracking-widest 
+    @apply bg-polvere text-bamba tracking-widest font-helvetica
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold font-sans
+    @apply font-bold 
   }
 
   h1 {
@@ -29,7 +28,22 @@
   }
 
   button {
-    @apply shadow-xl rounded-xl uppercase bg-gradient-to-r from-[#375e8f] to-[#683595]
+    @apply uppercase 
   }
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+}
+.my-node-exit {
+  opacity: 1;
+}
+.my-node-exit-active {
+  opacity: 0;
+  transition: all 400ms ease-in-out;
 }
 

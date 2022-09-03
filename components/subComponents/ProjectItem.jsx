@@ -1,20 +1,53 @@
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
+import Image from 'next/image';
+import React, { useState, useEffect } from 'react';
+import { CSSTransition } from 'react-transition-group';
+import Modal from './Modal';
 
-const ProjectItem = ({title, backgroundImg, tech, projectUrl}) => {
-  return (
-    <div className='relative flex items-center justify-center h-auto w-full rounded-xl group opacity-[.85] hover:bg-gradient-to-r from-azzurrino to-rosino'>
-    <Image className='rounded-xl group-hover:opacity-[.2] group-hover:blur-sm' src={backgroundImg} alt='/' /> 
-    <div className='hidden group-hover:block absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-        <h3 className='text-2xl text-polvere tracking-wider text-center'>{title}</h3>
-        <p className='pb-4 pt-2 text-polvere text-center'>{tech}</p>
-        <Link href={projectUrl}>
-            <p className='text-center py-3 rounded-lg bg-[rgba(255,255,255,.4)] backdrop-blur-md text-polvere font-bold text-lg cursor-pointer'>More Info</p>
-        </Link>
-    </div>
- </div>
-  )
-}
 
-export default ProjectItem
+const ProjectItem = (props) => {
+	const [showModal, setShowModal] = useState(false);
+
+	useEffect(() => {
+		const body = document.querySelector('body');
+		body.style.overflow = showModal ? 'hidden' : 'auto';
+	}, [showModal]);
+
+	return (
+		<div className="relative flex items-center justify-center h-auto w-full rounded-xl group opacity-[.85] hover:bg-gradient-to-r from-azzurrino to-oltremare">
+			<Image
+				className="rounded-xl group-hover:opacity-[.2] group-hover:blur-sm"
+				src={props.backgroundImg}
+				alt="/"
+			/>
+			<div className="hidden absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:flex flex-col">
+				<h3 className="text-2xl text-polvere tracking-wider text-center ">
+					{props.title}
+				</h3>
+				<p className="pb-4 pt-2 text-polvere text-center">
+					{props.tech}
+				</p>
+				<button
+					onClick={() => setShowModal(true)}
+					className="py-3 px-6 mx-auto rounded-full bg-[rgba(255,255,255,.4)] backdrop-blur-md text-polvere font-bold text-lg cursor-pointer hover:bg-[rgba(255,255,255,.8)] ease-in duration-200"
+				>
+					More Info
+				</button>
+			</div>
+			<CSSTransition
+				in={showModal}
+				timeout={1500}
+				classNames="my-node"
+			>
+				<Modal
+					show={showModal}
+					onClose={() => {
+						setShowModal(false);
+					}}
+					{...props}
+				/>
+			</CSSTransition>
+		</div>
+	);
+};
+
+export default ProjectItem;

@@ -6,13 +6,13 @@ import { HiOutlineMail } from 'react-icons/hi';
 
 const Main = () => {
 	return (
-		<div id="main" className="w-full h-screen text-center bg-gradient-to-b from-[#c0e9ff] to-[#d0a4ff] text-polvere">
+		<section id="main" className="w-full h-screen text-center bg-gradient-to-b from-[#c0e9ff] to-[#d0a4ff] text-polvere">
 			<div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
 				<div>
 					<p className="py-3 text-sm tracking-widest text-gray-600">
 						Let&apos;s Build Something Great
 					</p>
-					<h1 className="py-2 text-gray-700">
+					<h1 className="pb-0 lg:py-2 text-gray-700">
 						Hi I&apos;m{' '}
 						<span className="text-oltremare">Hideo</span>,
 					</h1>
@@ -44,7 +44,7 @@ const Main = () => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

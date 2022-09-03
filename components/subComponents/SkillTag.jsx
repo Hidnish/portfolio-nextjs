@@ -14,15 +14,15 @@ const SkillTag = ({ img, title, radius }) => {
 
 	return (
 		<div
-			className="flex justify-center shadow-inner shadow-[#101010] rounded-full h-32 w-32 relative"
+			className="flex justify-center shadow-inner shadow-[#101010] rounded-full h-24 w-24 md:h-32 md:w-32 relative"
 			onMouseOver={handleMouseOver}
 			onMouseOut={handleMouseOut}
 		>
-			<div className="m-auto hover:rotate-[15deg] ease-in duration-200">
+			<div className="m-auto flex hover:rotate-[15deg] ease-in duration-200">
 				<Image
 					src={img}
-					width="64px"
-					height="64px"
+					width="60px"
+					height="60px"
 					alt="/"
 					style={{ borderRadius: radius }}
 				/>
