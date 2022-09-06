@@ -23,7 +23,7 @@ const ProjectItem = (props) => {
 				<h3 className="text-xl text-polvere tracking-wider text-center mb-2">
 					{props.title}
 				</h3>
-				<p className="text-sm pb-4 pt-2 text-polvere text-center md:hidden lg:block">
+				<p className="text-sm pb-4 pt-2 text-polvere text-center hidden lg:block">
 					{props.tech}
 				</p>
 				<button
