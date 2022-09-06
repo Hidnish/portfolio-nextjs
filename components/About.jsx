@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { download } from 'react-use-downloader';
 import Dede from '../public/assets/hideo.jpg';
 import { ImFolderDownload } from 'react-icons/im';
 import { AiOutlineProject } from 'react-icons/ai';
@@ -35,16 +36,19 @@ const About = () => {
 						href="#projects"
 						className="py-3 cursor-pointer hover:text-oltremare ease-in duration-200 flex w-fit"
 					>
-						Check out of my projects &nbsp; <AiOutlineProject size={25} />
+						Check out of my projects &nbsp;{' '}
+						<AiOutlineProject size={25} />
 					</a>
-					<a
-						href="/../public/assets/Hideo_CV_2022.pdf"
-						title="resume"
-						className="py-3 cursor-pointer hover:text-oltremare ease-in duration-200 flex w-fit"
-						download
-					>
-						Dowload my resume &nbsp; <ImFolderDownload size={20} /> 
-					</a>
+					{/* <div className="py-3 cursor-pointer hover:text-oltremare ease-in duration-200 flex w-fit" >
+						<Link
+							href="/../public/assets/Hideo_CV_2022.pdf"
+							title="resume"
+							download
+						>
+							Dowload my resume &nbsp;
+						</Link>
+						<ImFolderDownload size={20} />
+					</div> */}
 				</div>
 				<div className="col-span-4 w-full max-w-md h-auto m-auto mt-6 lg:mt-auto rounded-full flex items-center justify-center p-4">
 					<Image src={Dede} className="rounded-full" alt="/" />
