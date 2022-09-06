@@ -31,7 +31,7 @@ const Skills = () => {
 						<SkillTag img={Css} title="CSS" />
 						<SkillTag img={Javascript} title="JavaScript" radius={10} />
 						<SkillTag img={ReactImg} title="React - React Native" />
-						<SkillTag img={Tailwind} title="Tailwindcss" />
+						<SkillTag img={Tailwind} title="Tailwind CSS" />
 						<SkillTag img={Bootstrap} title="Bootstrap" />
 						<SkillTag img={Python} title="Python" />
 						<SkillTag img={Flask} title="Flask" radius={10} />
