@@ -22,13 +22,6 @@ const Navbar = () => {
 	return (
 		<section id="top" className="w-full h-14 z-[100] bg-[#c0e9ff] text-polvere">
 			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-				{/* <Image
-					src="/../public/assets/logo.png"
-					alt="portfolio logo"
-					width="40"
-					height="40"
-					className="ml-6"
-				/> */}
 				<h2 className="italic text-gray-700 ml-4">HN</h2>
 				<div>
 					<ul className="hidden md:flex mr-6">
@@ -71,18 +64,12 @@ const Navbar = () => {
 					onClick={e => e.stopPropagation()}
 					className={
 						nav
-							? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[30%] h-screen bg-[#ecf0f3] p-10 ease-linear duration-500 rounded-r-2xl'
-							: 'fixed left-[-100%] top-0 p-10 ease-linear duration-500 rounded-r-2xl'
+							? 'fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[30%] h-screen bg-[#ecf0f3] p-10 ease-linear duration-500'
+							: 'fixed left-[-100%] top-0 p-10 ease-linear duration-500'
 					}
 				>
 					<div className="border-b border-gray-300 my-4">
 						<div className="flex w-full item-center justify-between mb-6">
-							{/* <Image
-								src="/../public/assets/logo.png"
-								alt="logo"
-								width="40"
-								height="35"
-							/> */}
 							<h2 className="italic text-gray-700">HN</h2>
 							<div
 								onClick={handleSide}
