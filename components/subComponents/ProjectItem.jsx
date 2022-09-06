@@ -20,15 +20,15 @@ const ProjectItem = (props) => {
 				alt="/"
 			/>
 			<div className="hidden absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] group-hover:flex flex-col">
-				<h3 className="text-2xl text-polvere tracking-wider text-center ">
+				<h3 className="text-xl text-polvere tracking-wider text-center mb-2">
 					{props.title}
 				</h3>
-				<p className="pb-4 pt-2 text-polvere text-center">
+				<p className="text-sm pb-4 pt-2 text-polvere text-center md:hidden lg:block">
 					{props.tech}
 				</p>
 				<button
 					onClick={() => setShowModal(true)}
-					className="py-3 px-6 mx-auto rounded-full bg-[rgba(255,255,255,.4)] backdrop-blur-md text-polvere font-bold text-lg cursor-pointer hover:bg-[rgba(255,255,255,.8)] ease-in duration-200"
+					className="py-3 px-6 mx-auto rounded-full bg-[rgba(255,255,255,.4)] backdrop-blur-md text-polvere font-bold text-md cursor-pointer hover:bg-[rgba(255,255,255,.8)] ease-in duration-200"
 				>
 					More Info
 				</button>
