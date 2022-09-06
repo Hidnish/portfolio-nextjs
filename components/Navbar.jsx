@@ -29,7 +29,7 @@ const Navbar = () => {
 					height="40"
 					className="ml-6"
 				/> */}
-				<h2 className="italic text-gray-700">HN</h2>
+				<h2 className="italic text-gray-700 ml-4">HN</h2>
 				<div>
 					<ul className="hidden md:flex mr-6">
 						<Link href="#about">
@@ -77,12 +77,13 @@ const Navbar = () => {
 				>
 					<div className="border-b border-gray-300 my-4">
 						<div className="flex w-full item-center justify-between mb-6">
-							<Image
+							{/* <Image
 								src="/../public/assets/logo.png"
 								alt="logo"
 								width="40"
 								height="35"
-							/>
+							/> */}
+							<h2 className="italic text-gray-700">HN</h2>
 							<div
 								onClick={handleSide}
 								className="rounded-full p-3 cursor-pointer hover:bg-github hover:text-white ease-in duration-200"
