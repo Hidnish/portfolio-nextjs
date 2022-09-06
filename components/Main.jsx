@@ -25,12 +25,12 @@ const Main = () => {
 						look around and don&apos;t hesitate to contact me for
 						collaborations and new project ideas!
 					</p>
-					<div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+					<div className="flex items-center justify-center md:justify-between max-w-[330px] m-auto py-4">
 						<a
 							href="https://www.linkedin.com/in/hideo-tommaso-nishimura-5029b0159/"
 							target="_blank"
 							rel="noreferrer"
-							className="rounded-full p-3 cursor-pointer hover:bg-[#0072b1] hover:text-white ease-in duration-200"
+							className="rounded-full p-3 mx-8 cursor-pointer hover:bg-[#0072b1] hover:text-white ease-in duration-200"
 						>
 							<FaLinkedinIn size={20} />
 						</a>
@@ -38,13 +38,13 @@ const Main = () => {
 							href="https://github.com/Hidnish"
 							target="_blank"
 							rel="noreferrer"
-							className="rounded-full p-3 cursor-pointer hover:bg-github hover:text-white ease-in duration-200"
+							className="rounded-full p-3 mx-8 cursor-pointer hover:bg-github hover:text-white ease-in duration-200"
 						>
 							<FaGithub size={20} />
 						</a>
 						<a
 							href="#contacts"
-							className="rounded-full p-3 cursor-pointer hover:bg-[#C85250] hover:text-white ease-in duration-200"
+							className="rounded-full p-3 mx-8 cursor-pointer hover:bg-[#C85250] hover:text-white ease-in duration-200"
 						>
 							<BsPersonLinesFill size={20} />
 						</a>
