@@ -26,10 +26,6 @@
   li {
     @apply cursor-pointer
   }
-
-  button {
-    @apply uppercase 
-  }
 }
 
 .my-node-enter {
