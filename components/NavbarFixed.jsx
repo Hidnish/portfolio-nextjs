@@ -1,4 +1,5 @@
 import React from 'react';
+import { useScrollPosition } from '../hooks/useScrollPosition';
 import {
 	AiOutlineHome,
 	AiOutlineProject,
@@ -7,9 +8,11 @@ import {
 import { BiUser, BiCodeAlt } from 'react-icons/bi';
 import { useScrollspy } from '../hooks/useScrollSpy';
 
-const NavbarFixed = ({ visibility }) => {
+const NavbarFixed = () => {
 	const ids = ['main', 'about', 'skills', 'projects', 'contacts'];
 	const activeId = useScrollspy(ids, 80);
+	const scrollPos = useScrollPosition();
+	const visibility = scrollPos ? "visible opacity-1" : "invisible opacity-0 transition-opacity linear duration-500"
 
 	return (
 		<nav
