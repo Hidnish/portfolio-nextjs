@@ -22,13 +22,14 @@ const Navbar = () => {
 	return (
 		<section id="top" className="w-full h-14 z-[100] bg-[#c0e9ff] text-polvere">
 			<div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-				<Image
+				{/* <Image
 					src="/../public/assets/logo.png"
 					alt="portfolio logo"
 					width="40"
 					height="40"
 					className="ml-6"
-				/>
+				/> */}
+				<h2 className="italic text-gray-700">HN</h2>
 				<div>
 					<ul className="hidden md:flex mr-6">
 						<Link href="#about">
