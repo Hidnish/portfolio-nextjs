@@ -2,6 +2,8 @@ import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import Dede from '../public/assets/hideo.jpg';
+import { ImFolderDownload } from 'react-icons/im';
+import { AiOutlineProject } from 'react-icons/ai';
 
 const About = () => {
 	return (
@@ -17,33 +19,32 @@ const About = () => {
 				</div>
 				<div className="col-span-7">
 					<h2 className="py-4 lg:pb-10 lg:pt-0">Who I Am</h2>
-					<p className="py-2 text-gray-400">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu
-						fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-						non proident, sunt in culpa qui officia deserunt mollit
-						anim id est laborum.
+					<p className="pt-2 pb-10 text-gray-400">
+						At present, I work as a front-end developer intern for{' '}
+						<strong>Bokföringsproffsen AB</strong> while mastering
+						React on my own. During the past year I have acquired
+						skills in developing e-commerce oriented web
+						applications, and have worked on several portfolio
+						projects that can be viewed by clicking on the link
+						below.
+						<br /> My goal as a web developer is to gain foothold in
+						the industry, work with a passionate team and never stop
+						learning new things!
 					</p>
-					<p className="py-2 text-gray-400">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua. Ut enim ad minim veniam, quis nostrud
-						exercitation ullamco laboris nisi ut aliquip ex ea
-						commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu
-						fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-						non proident, sunt in culpa qui officia deserunt mollit
-						anim id est laborum.
-					</p>
-					<Link href="/#projects">
-						<p className="py-2 text-gray-400 underline cursor-pointer">
-							Check out some of my projects.
-						</p>
-					</Link>
+					<a
+						href="#projects"
+						className="py-3 cursor-pointer hover:text-oltremare ease-in duration-200 flex w-fit"
+					>
+						Check out of my projects &nbsp; <AiOutlineProject size={25} />
+					</a>
+					<a
+						href="/../public/assets/Hideo_CV_2022.pdf"
+						title="resume"
+						className="py-3 cursor-pointer hover:text-oltremare ease-in duration-200 flex w-fit"
+						download
+					>
+						Dowload my resume &nbsp; <ImFolderDownload size={20} /> 
+					</a>
 				</div>
 				<div className="col-span-4 w-full max-w-md h-auto m-auto mt-6 lg:mt-auto rounded-full flex items-center justify-center p-4">
 					<Image src={Dede} className="rounded-full" alt="/" />
