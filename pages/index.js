@@ -1,6 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { useScrollPosition } from '../hooks/useScrollPosition';
+
 import Navbar from '../components/Navbar';
 import NavbarFixed from '../components/NavbarFixed';
 import Main from '../components/Main';
@@ -11,7 +10,6 @@ import Contacts from '../components/Contacts';
 import Modal from '../components/subComponents/Modal';
 
 export default function Home() {
-	const scrollPos = useScrollPosition();
 
 	return (
 		<div>
@@ -23,13 +21,7 @@ export default function Home() {
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<NavbarFixed
-				visibility={
-					scrollPos
-						? 'visible opacity-1'
-						: 'invisible opacity-0 transition-opacity linear duration-500'
-				}
-			/>
+			<NavbarFixed />
 			<Navbar />
 			<Main />
 			<About />
