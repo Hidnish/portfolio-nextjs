@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { download } from 'react-use-downloader';
 import Dede from '../public/assets/hideo.jpg';
 import { ImFolderDownload } from 'react-icons/im';
 import { AiOutlineProject } from 'react-icons/ai';
