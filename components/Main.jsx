@@ -22,7 +22,7 @@ const Main = () => {
 					</h1>
 					<p className="py-6 text-gray-600 max-w-[70%] m-auto m-b-[100px]">
 						Welcome to my official Portfolio Website. Take a
-						look around and contact me to collaborate work on new project ideas!
+						look around and contact me to collaborate on new project ideas!
 					</p>
 					<div className="flex items-center justify-center md:justify-between max-w-[330px] m-auto py-4">
 						<a
