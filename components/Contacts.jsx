@@ -49,7 +49,7 @@ const Contacts = () => {
 					</h2>
 					<div className="lg:grid lg:grid-cols-9 lg:gap-8">
 						<div className="flex justify-center lg:justify-start lg:col-span-3 mb-20">
-							<div className="flex flex-col gap-5 w-[80%]">
+							<div className="flex flex-col gap-5 w-[100%] sm:w-[60%] lg:w-[80%]">
 								<ContactBox
 									title="Email"
 									content="hideonishimura@live.it"
@@ -75,7 +75,7 @@ const Contacts = () => {
 
 						<div className="flex justify-center lg:justify-start lg:col-span-6">
 							<form
-								className="flex flex-col gap-5 w-[80%] lg:w-[90%]"
+								className="flex flex-col gap-5 w-[100%] lg:w-[90%]"
 								ref={form}
 								onSubmit={sendEmail}
 							>
