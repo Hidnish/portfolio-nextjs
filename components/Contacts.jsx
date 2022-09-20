@@ -103,6 +103,7 @@ const Contacts = () => {
 								<button
 									type="submit"
 									className="px-7 mx-auto text-center py-3 rounded-full bg-[rgba(255,255,255,.6)] backdrop-blur-md text-polvere font-bold text-lg cursor-pointer hover:bg-[rgba(255,255,255,.9)] ease-in duration-200"
+									aria-label="send message"
 								>
 									<FiSend />
 								</button>

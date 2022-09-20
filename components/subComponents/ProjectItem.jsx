@@ -29,6 +29,7 @@ const ProjectItem = (props) => {
 				<button
 					onClick={() => setShowModal(true)}
 					className="py-3 px-6 mx-auto rounded-full bg-[rgba(255,255,255,.4)] backdrop-blur-md text-polvere font-bold text-md cursor-pointer hover:bg-[rgba(255,255,255,.8)] ease-in duration-200"
+					aria-label="link to project info"
 				>
 					More Info
 				</button>

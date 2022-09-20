@@ -63,12 +63,12 @@ const Modal = ({
 							</h3>
 							<p className="mb-4">{description}</p>
 							<a href={code} target="_blank" rel="noreferrer">
-								<button className="px-8 py-2 mt-4 mr-8 border rounded-full border-bamba hover:bg-bamba hover:text-polvere">
+								<button aria-label="link to project codebase" className="px-8 py-2 mt-4 mr-8 border rounded-full border-bamba hover:bg-bamba hover:text-polvere">
 									Code
 								</button>
 							</a>
 							<a href={demo} target="_blank" rel="noreferrer">
-								<button className="px-8 py-2 mt-4 border rounded-full border-bamba hover:bg-bamba hover:text-polvere">
+								<button aria-label="link to project demo" className="px-8 py-2 mt-4 border rounded-full border-bamba hover:bg-bamba hover:text-polvere">
 									Demo
 								</button>
 							</a>
