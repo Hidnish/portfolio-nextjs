@@ -65,7 +65,7 @@ const Contacts = () => {
 								</ContactBox>
 								<ContactBox
 									title="Whatsapp"
-									link="https://api.whatsapp.com/send?phone=0761254308"
+									link="https://wa.me/46761254308"
 									message="Send a Message"
 								>
 									<BsWhatsapp className="text-2xl mb-2 mx-auto" />
